@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMT Time Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>GMT Time Converter</h1>
+    </header>
+    <main>
+      <!-- Gateway Selection -->
+      <div class="input-group">
+        <label for="gateway">Select Gateway:</label>
+        <select id="gateway">
+          <option value="">-- Choose a Gateway --</option>
+          <option value="CitiBank">CitiBank (GMT +8)</option>
+          <option value="DBS">DBS (GMT +8)</option>
+          <option value="Doku">Doku / OVO (GMT +7)</option>
+          <option value="Dragonpay">Dragonpay (GMT +8)</option>
+          <option value="Rendimento">Rendimento (GMT -3)</option>
+          <option value="Safetypay">Safetypay (GMT -5)</option>
+          <option value="Tranglo">Tranglo (GMT +8)</option>
+          <option value="STP">STP (GMT -6)</option>
+          <option value="Razor">Razor (Molpay) (GMT +8)</option>
+        </select>
+      </div>
+
+      <!-- Enhanced Date and Time Selection -->
+      <div class="input-group">
+        <label for="datetime">Select Date and Time:</label>
+        <div id="input-timezone">
+          <input type="date" id="date" class="custom-date">
+          <input type="time" id="time" class="custom-time">
+        </div>
+      </div>
+
+      <!-- Output GMT Selection (Israel Time) -->
+      <div class="input-group">
+        <label for="output-timezone">Select Output Timezone (Israel Time):</label>
+        <select id="output-timezone">
+          <option value="2">Israel Time (GMT +2 - Winter)</option>
+          <option value="3">Israel Time (GMT +3 - Summer)</option>
+        </select>
+      </div>
+
+      <!-- Convert Button -->
+      <button id="convert-btn" class="btn">Convert</button>
+
+      <!-- Output Converted Time -->
+      <div class="output">
+        <h2>Israel Time:</h2>
+        <p id="converted-time">-</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Made with ❤️ by ChatGPT and Omer Krespi</p>
+    </footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
